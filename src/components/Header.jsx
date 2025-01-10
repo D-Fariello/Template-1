@@ -5,12 +5,12 @@ const Header = () => {
   return (
     <header>
       <nav className="main-nav">
-        <Link>
+        <Link to="/">
           <button className="button-nav"> Dalila Fariello </button>
         </Link>
-        <Link>
+        <a href="#projects">
           <button className="button-nav"> Projects </button>
-        </Link>
+        </a>
       </nav>
     </header>
   );

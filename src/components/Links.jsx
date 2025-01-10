@@ -23,6 +23,16 @@ const Links = () => {
             GitHub
           </a>
         </li>
+        {/* CV Download Button */}
+        <li>
+          <a
+            href="/Dalila_Fariello_CV.pdf"
+            download="Dalila_Fariello_CV"
+            className="cv-download-button"
+          >
+            Download My CV
+          </a>
+        </li>
       </ul>
     </div>
   );

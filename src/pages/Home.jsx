@@ -67,7 +67,7 @@ const Home = () => {
       </section>
 
       {/* Project Section */}
-      <section>
+      <section id="projects">
         <Projects />
       </section>
     </main>

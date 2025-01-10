@@ -1,5 +1,6 @@
 import React from "react";
 import SkillsSection from "../components/SkillsSection";
+import Projects from "../components/Projects";
 
 const Home = () => {
   return (
@@ -66,11 +67,8 @@ const Home = () => {
       </section>
 
       {/* Project Section */}
-
       <section>
-        <h3>Projects</h3>
-        <div className="projects">{/* Aggiungi qui i tuoi progetti */}</div>
-        <div className="cards">{/* Aggiungi qui le card per i progetti */}</div>
+        <Projects />
       </section>
     </main>
   );

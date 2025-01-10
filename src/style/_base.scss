@@ -38,7 +38,8 @@ p {
 
 nav.main-nav {
   display: flex;
-  margin: 20px 70px;
+  margin-top: 2%;
+  margin-left: 10%;
   gap: 30px;
 
   button.button-nav {
@@ -70,13 +71,9 @@ nav.main-nav {
   border-bottom: 1px solid black;
 }
 
-section{
-    margin-left: 5%;
-}
-
 h1 {
   display: flex;
-  margin-right: 30%;
+  margin-right: 20%;
   justify-content: center;
   font-size: 8rem;
   font-family: variables.$font-tan-angleton;
@@ -124,9 +121,9 @@ img.aboutMeImage {
   flex-direction: column;
   align-items: start;
   margin-top: 40px;
-  margin-left: 50%;
+  margin-left: 55%;
   width: 30%;
-  top: 30%;
+  top: 20%;
   position: absolute;
 }
 
@@ -173,7 +170,7 @@ img.aboutMeImage {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  margin-top: -74px;
+  margin-top: -55%;
   width: 60%;
   margin-left: 100%;
 }
@@ -209,36 +206,200 @@ img.aboutMeImage {
   }
 }
 
-.projects {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-  gap: 20px;
-  margin-top: 40px;
-  width: 100%;
+////////////////////////// Projects Style ///////////////////:
+
+section#projects {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  h1.projectsTitle {
+    font-size: 5rem;
+    margin-right: 0;
+    margin-bottom: 3%;
+  }
+
+  .projectsGrid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    position: relative;
+    margin-bottom: 10%;
+
+    .projectCard {
+      background-color: #dfd3ca;
+      border: 1px solid #ddd;
+      border-radius: 0px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+      text-align: center;
+      width: 230px;
+      height: 200px;
+      border-radius: 11px;
+
+      &:hover {
+        transform: scale(1.1);
+      }
+
+      img {
+        width: 100%;
+        height: 150px;
+        display: block;
+        object-fit: cover;
+        cursor: pointer;
+        border-radius: 11px;
+      }
+
+      .projectsParagraph {
+        cursor: pointer;
+        font-family: variables.$font-tan-angleton;
+      }
+    }
+  }
+
+  .projectsButtons {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 3%;
+    gap: 15px;
+  }
+
+  button {
+    border: 1px solid black;
+    border-radius: 17px 17px;
+    padding: 10px;
+    width: 140px;
+    background-color: variables.$background-color;
+    cursor: pointer;
+    transition: transform 0.2s ease, color 0.2s ease;
+  }
+
+  button:hover {
+    transform: scale(1.1);
+    background-color: #bab0a1;
+    border: 2px solid white;
+    color: white;
+  }
 }
 
-.cards {
-  display: flex;
-  gap: 10px;
-  margin-top: 40px;
-  flex-wrap: wrap;
+/////////////////////// Modal Style ////////////////
+
+.modalOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  
+    .modalContent {
+      background: white;
+      padding: 20px;
+      border-radius: 8px;
+      max-width: 500px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      position: relative;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+
+      button.closeButton {
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        background-color: white;
+        border: 1px solid black;
+        border-radius: 7px;
+        width: 30px !important;
+      }
+      
+      .closeButton:hover {
+        background-color: #f3e9e2;
+        transform: scale(1.0);
+        font-size: 17px;
+      }
+  
+      .modalParagraph {
+        font-family: variables.$font-tan-angleton;
+      }
+  
+      .buttonsDiv {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 40px;
+  
+        a.websiteButton,
+        a.githubButton {
+            display: flex;
+            justify-content: center;
+            background-color: variables.$background-color;
+            font-family: variables.$font-tan-angleton;
+            font-size: 16px;
+            font-weight: 100;
+            text-decoration: none;
+            color: black;
+            border: 1px solid black;
+            padding: 10px 50px; 
+            width: 140px; 
+            border-radius: 17px;
+            transition: transform 0.3s ease, background-color 0.3s ease;
+            cursor: pointer;
+            &:hover {
+              background-color: #bab0a1; 
+              border: 2px solid white;
+              color: white;
+              transform: scale(1.1);
+        }
+  
+        a.websiteButton:hover,
+        a.githubButton:hover {
+            background-color: #f3e9e2;
+            transform: scale(1.1);
+            font-size: 17px;
+        }
+      }
+    }
+
+    img.imageModal {
+        height: 100px;
+    }
+  
+    .modalClose {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      background: none;
+      border: none;
+      font-size: 1.5rem;
+      cursor: pointer;
+    }
+  }
 }
 
 //////////////// Footer Style //////////////////
 
 footer.footerSection {
-    display: flex;
-        gap: 30%;
-        margin-top: 2%;
-        justify-content: center;
+  display: flex;
+  gap: 30%;
+  margin-top: 2%;
+  justify-content: center;
 
   .footerTitle {
     font-weight: bold;
     margin-bottom: 0;
   }
 
-  .footerParagraph{
+  .footerParagraph {
     margin-top: 0;
   }
-
 }

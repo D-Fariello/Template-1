@@ -2,10 +2,19 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <footer className="footer-section">
-      <div className="email"> E-mail</div>
-      <div className="phone-number"> Phone Number</div>
-      <div className="adress"> Position </div>
+    <footer className="footerSection">
+      <div className="footerItem">
+        <h3 className="footerTitle">E-mail</h3>
+        <p className="footerParagraph">dalila.fariello@gmail.com</p>
+      </div>
+      <div className="footerItem">
+        <h3 className="footerTitle">Phone Number</h3>
+        <p className="footerParagraph">+33 (0) 635130187</p>
+      </div>
+      <div className="footerItem">
+        <h3 className="footerTitle">Position</h3>
+        <p className="footerParagraph">Nice, France</p>
+      </div>
     </footer>
   );
 };

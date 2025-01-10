@@ -18,10 +18,22 @@ const Home = () => {
         <div className="jobInformation">
           <h3 className="jobTitle">Front End Developer</h3>
           <p className="jobDescription">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa
-            beatae cumque voluptatem sequi deleniti sed harum maiores tenetur
-            totam quae natus aliquid veritatis, provident reiciendis cupiditate
-            amet molestias quam similique!
+            A front-end developer is responsible for creating the visual and
+            interactive elements of websites and applications, ensuring they are
+            responsive, user-friendly, and compatible across all devices and
+            browsers.
+          </p>
+          <p className="jobDescription">
+            Using technologies like HTML, CSS, and JavaScript, they transform
+            design concepts into dynamic, functional web pages. I bring a strong
+            focus on creating seamless, engaging user experiences by leveraging
+            responsive design, performance optimization, and dynamic interfaces.
+          </p>
+          <p className="jobDescription">
+            My attention to detail ensures that every web application I develop
+            is not only visually appealing but also fast, accessible, and
+            intuitive, delivering high-quality solutions tailored to meet
+            specific business needs.
           </p>
         </div>
 

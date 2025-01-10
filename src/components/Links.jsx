@@ -7,7 +7,7 @@ const Links = () => {
       <ul>
         <li>
           <a
-            href="https://www.linkedin.com/in/dalilafariello"
+            href="https://www.linkedin.com/in/dalila-fariello/"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -16,7 +16,7 @@ const Links = () => {
         </li>
         <li>
           <a
-            href="https://github.com/dalilafariello"
+            href="https://github.com/D-Fariello"
             target="_blank"
             rel="noopener noreferrer"
           >

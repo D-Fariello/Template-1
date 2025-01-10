@@ -2,7 +2,7 @@ import React from "react";
 
 const Home = () => {
   return (
-    <main>
+    <main className="mainDiv">
       <section>
         <h1>Dalila</h1>
         <h2 className="lastName">Fariello</h2>
@@ -26,12 +26,20 @@ const Home = () => {
 
         <div className="skills">
           <h3>Skills</h3>
-          <ul>
-            <li>JavaScript</li>
-            <li>React</li>
-            <li>HTML</li>
-            <li>CSS</li>
-          </ul>
+          <div className="skillsDiv">
+            <ul className="skillsList">
+              <li className="buttonsList">JavaScript</li>
+              <li className="buttonsList">React</li>
+              <li className="buttonsList">HTML</li>
+              <li className="buttonsList">CSS</li>
+            </ul>
+            <ul className="skillsList">
+              <li className="buttonsList">Redux</li>
+              <li className="buttonsList">GtiHub</li>
+              <li className="buttonsList">Leadership</li>
+              <li className="buttonsList">Jira</li>
+            </ul>
+          </div>
         </div>
 
         <div className="aboutMe">

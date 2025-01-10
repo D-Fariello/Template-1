@@ -7,7 +7,7 @@ import Image from "../components/Image";
 const Home = () => {
   return (
     <main className="mainDiv">
-      <section>
+      <section id="home">
         <h1>Dalila</h1>
         <h2 className="lastName">Fariello</h2>
         <div className="photo">

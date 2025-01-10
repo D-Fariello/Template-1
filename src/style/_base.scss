@@ -37,10 +37,14 @@ p {
 //////////////////// NavBar Style //////////////////
 
 nav.main-nav {
-  display: flex;
-  margin-top: 2%;
-  margin-left: 10%;
-  gap: 30px;
+    display: flex;
+        gap: 30px;
+        width: 100%;
+        position: fixed;
+        z-index: 1000;
+        background-color: #dfd3ca;
+        border-bottom: 1px solid black;
+        padding: 20px;
 
   button.button-nav {
     border: 1px solid black;
@@ -69,6 +73,10 @@ nav.main-nav {
   align-items: center;
   position: relative;
   border-bottom: 1px solid black;
+}
+
+section {
+    margin-top: 5%;
 }
 
 h1 {
@@ -123,7 +131,7 @@ img.aboutMeImage {
   margin-top: 40px;
   margin-left: 55%;
   width: 30%;
-  top: 20%;
+  top: 15%;
   position: absolute;
 }
 
@@ -167,17 +175,19 @@ img.aboutMeImage {
 }
 
 .links {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  margin-top: -55%;
-  width: 60%;
-  margin-left: 100%;
-}
+    display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-top: 5%;
+    }
 
 .links ul {
-  list-style-type: none;
-  padding: 0;
+    display: flex
+    ;
+        list-style-type: none;
+        padding: 0;
+        flex-direction: row;
+        gap: 10px;
 
   li {
     border: 1px solid black;
@@ -204,6 +214,20 @@ img.aboutMeImage {
       }
     }
   }
+}
+
+.photoComputer {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    margin-right: 23%;
+    margin-top: -22%;
+
+    img.mugCoffeePhoto {
+        height: 400px;
+        border-radius: 50px 0 50px 0;
+    }
 }
 
 ////////////////////////// Projects Style ///////////////////:
@@ -393,6 +417,7 @@ footer.footerSection {
   gap: 30%;
   margin-top: 2%;
   justify-content: center;
+  margin-bottom: 2%;
 
   .footerTitle {
     font-weight: bold;

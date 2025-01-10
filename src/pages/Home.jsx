@@ -1,6 +1,8 @@
 import React from "react";
 import SkillsSection from "../components/SkillsSection";
 import Projects from "../components/Projects";
+import Links from "../components/Links";
+import Image from "../components/Image";
 
 const Home = () => {
   return (
@@ -63,8 +65,10 @@ const Home = () => {
             the gym, and discovering new cuisines—because great food is an
             adventure in itself!
           </p>
+          <Links />
         </div>
       </section>
+      <Image />
 
       {/* Project Section */}
       <section id="projects">

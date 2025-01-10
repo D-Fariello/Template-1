@@ -1,7 +1,5 @@
 import React from "react";
 import SkillsList from "./SkillsList";
-import Links from "./Links";
-
 const SkillsSection = () => {
   return (
     <div className="skills">
@@ -9,7 +7,6 @@ const SkillsSection = () => {
       <div className="skillsDiv">
         <SkillsList skills={["JavaScript", "React", "HTML", "CSS"]} />
         <SkillsList skills={["Redux", "GitHub", "Leadership", "Jira"]} />
-        <Links />
       </div>
     </div>
   );

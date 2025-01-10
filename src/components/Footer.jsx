@@ -12,7 +12,7 @@ const Footer = () => {
         <p className="footerParagraph">+33 (0) 635130187</p>
       </div>
       <div className="footerItem">
-        <h3 className="footerTitle">Position</h3>
+        <h3 className="footerTitle">Based in</h3>
         <p className="footerParagraph">Nice, France</p>
       </div>
     </footer>
